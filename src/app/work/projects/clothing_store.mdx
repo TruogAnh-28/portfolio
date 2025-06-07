@@ -1,0 +1,194 @@
+---
+title: 'Clothing Store Management Website'
+publishedAt: '2024-12-01'
+summary: 'A full-featured e-commerce and management platform for clothing retail, built from scratch with PHP, MySQL, and modern web technologies.'
+images:
+  - '/images/projects/clothing/cover-01.jpg'
+  - '/images/projects/clothing/admin-panel.jpg'
+  - '/images/projects/clothing/storefront.jpg'
+team:
+  - name: 'Tuan Anh Nguyen'
+    role: 'Full-Stack Developer'
+    avatar: '/images/avatar.jpg'
+    linkedIn: ''
+link: 'https://github.com/TruogAnh-28/web_store'
+---
+
+## Overview
+
+The Clothing Store Management Website is a comprehensive e-commerce platform that I developed as a solo full-stack project. This system combines customer-facing e-commerce functionality with robust administrative tools, creating a complete solution for clothing retail businesses. The project demonstrates proficiency in both frontend design and backend development using PHP and MySQL.
+
+## Key Features
+
+### Customer Interface
+
+- **Product Catalog**: Intuitive browsing experience with category filtering and search functionality
+- **Shopping Cart**: Seamless add-to-cart functionality with quantity management
+- **Secure Checkout**: Complete purchase process with order confirmation and tracking
+- **User Reviews**: Customer feedback system for products with rating capabilities
+- **Account Management**: User registration, login, and profile management
+
+### Administrative Panel
+
+- **Product Management**: Complete CRUD operations for inventory control
+- **Order Processing**: Order status tracking and fulfillment management
+- **User Administration**: Customer account management and support tools
+- **Analytics Dashboard**: Sales reporting and business intelligence features
+
+### System Features
+
+- **Responsive Design**: Mobile-first approach ensuring optimal experience across all devices
+- **Security Implementation**: Input validation, SQL injection prevention, and secure authentication
+- **Performance Optimization**: Efficient database queries and optimized image handling
+
+## Technical Implementation
+
+### Frontend Development
+
+- **HTML5 & CSS3**: Modern semantic markup with advanced styling techniques
+- **Bootstrap Framework**: Responsive grid system and pre-built components for rapid development
+- **JavaScript**: Interactive features including dynamic cart updates and form validation
+- **Cross-Browser Compatibility**: Extensive testing to ensure consistent experience across browsers
+
+### Backend Architecture
+
+- **PHP**: Server-side logic handling all business operations and database interactions
+- **MySQL Database**: Relational database design with normalized schema for optimal performance
+- **Session Management**: Secure user authentication and shopping cart persistence
+- **File Upload System**: Image management for product photos with validation and optimization
+
+### Database Design
+
+```sql
+-- Core table structure examples
+Tables: users, products, categories, orders, order_items, reviews
+
+-- Key relationships
+- Users -> Orders (one-to-many)
+- Products -> Categories (many-to-one)
+- Orders -> Order_Items (one-to-many)
+- Products -> Reviews (one-to-many)
+```
+
+## Feature Deep Dive
+
+### Product Management System
+
+- **Category Organization**: Hierarchical category structure for easy navigation
+- **Inventory Tracking**: Real-time stock level monitoring with low-stock alerts
+- **Image Gallery**: Multiple product images with thumbnail generation
+- **Pricing Management**: Regular and sale pricing with promotional capabilities
+
+### E-commerce Functionality
+
+- **Shopping Cart Logic**: Persistent cart sessions with quantity calculations
+- **Order Processing**: Complete order lifecycle from placement to fulfillment
+- **Payment Integration Ready**: Structured for integration with payment gateways
+- **Email Notifications**: Automated order confirmations and status updates
+
+### Review System
+
+- **Rating System**: 5-star rating system with review text
+- **Moderation Tools**: Administrative approval process for reviews
+- **Review Analytics**: Aggregate ratings and review statistics for products
+
+## Technical Challenges
+
+### Challenge: Security Implementation
+
+**Solution**: Implemented comprehensive security measures including:
+
+- SQL injection prevention through prepared statements
+- XSS protection with input sanitization
+- CSRF token implementation for form submissions
+- Secure password hashing using PHP's password_hash()
+
+### Challenge: Performance Optimization
+
+**Solution**: Optimized database queries and implemented caching strategies:
+
+- Database indexing for frequently queried columns
+- Image compression and lazy loading
+- Efficient pagination for product listings
+- Query optimization for complex joins
+
+### Challenge: User Experience Design
+
+**Solution**: Created intuitive interfaces through:
+
+- User journey mapping for optimal flow
+- Responsive design testing across multiple devices
+- A/B testing for key conversion points
+- Accessibility compliance for inclusive design
+
+## Technical Stack
+
+- **Frontend**: HTML5, CSS3, Bootstrap 4/5, JavaScript
+- **Backend**: PHP 7+, MySQL 8.0
+- **Development Tools**: Visual Studio Code, XAMPP, Git
+- **Design Tools**: Adobe XD/Figma for UI mockups
+- **Testing**: Manual testing across browsers and devices
+
+## Project Architecture
+
+### File Structure
+
+```
+web_store/
+├── admin/          # Administrative interface
+├── assets/         # CSS, JS, images
+├── includes/       # Reusable PHP components
+├── uploads/        # Product images
+├── config/         # Database configuration
+└── pages/          # Main application pages
+```
+
+### Security Features
+
+- **Input Validation**: Server-side validation for all user inputs
+- **Authentication System**: Secure login with session management
+- **Role-Based Access**: Separation between customer and admin interfaces
+- **Data Encryption**: Sensitive data protection in database
+
+## Development Process
+
+### Planning Phase
+
+- **Requirements Analysis**: Identified core e-commerce features and admin needs
+- **Database Design**: Created ER diagrams and normalized schema
+- **UI/UX Mockups**: Designed user interfaces for both customer and admin sides
+
+### Implementation Phase
+
+- **Iterative Development**: Built features incrementally with testing at each stage
+- **Code Organization**: Modular PHP code with reusable components
+- **Database Implementation**: Progressive schema development with test data
+
+### Testing & Deployment
+
+- **Functionality Testing**: Comprehensive testing of all user journeys
+- **Performance Testing**: Load testing and optimization
+- **Security Testing**: Vulnerability assessment and fixes
+
+## Project Outcomes
+
+### Technical Achievements
+
+- **Complete E-commerce Solution**: Fully functional online store with management capabilities
+- **Scalable Architecture**: Designed to handle growth in products and users
+- **Security Compliance**: Implemented industry-standard security practices
+- **Performance Optimization**: Achieved fast page load times and efficient database operations
+
+### Learning Outcomes
+
+- **Full-Stack Proficiency**: Gained experience in complete web application development
+- **Database Design**: Advanced MySQL skills with complex relationships
+- **Security Awareness**: Understanding of web security vulnerabilities and protections
+- **Project Management**: Successfully managed all aspects of a solo development project
+
+## Code Quality
+
+### Best Practices Implemented
+
+- **MVC Pattern**: Separation of concerns for maintainable code
+- **Error Handling**: Comprehensive error

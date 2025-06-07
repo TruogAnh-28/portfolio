@@ -1,16 +1,16 @@
-import { Logo } from "@/once-ui/components";
+import { Logo } from '@/once-ui/components';
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: 'Tuan Anh',
+  lastName: 'Nguyen Truong',
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: 'AI Developer & Full-Stack Engineer',
+  avatar: '/images/avatar.jpg',
+  email: 'nguyentruongtuananh03@gmail.com',
+  location: 'Asia/Ho_Chi_Minh', // Thu Duc City, Vietnam timezone
+  languages: ['Vietnamese', 'English'], // Based on TOEIC 715
 };
 
 const newsletter = {
@@ -18,62 +18,65 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I share insights about AI development, full-stack engineering, and the
+      intersection of technology and education. Follow my journey in building
+      intelligent applications.
     </>
   ),
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    name: 'GitHub',
+    icon: 'github',
+    link: 'https://github.com/TruogAnh-28',
   },
   {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    name: 'LinkedIn',
+    icon: 'linkedin',
+    link: '', // Add your LinkedIn profile when available
   },
   {
-    name: "X",
-    icon: "x",
-    link: "",
-  },
-  {
-    name: "Email",
-    icon: "email",
+    name: 'Email',
+    icon: 'email',
     link: `mailto:${person.email}`,
   },
 ];
 
 const home = {
-  path: "/",
-  image: "/images/og/home.jpg",
-  label: "Home",
+  path: '/',
+  image: '/images/og/home.jpg',
+  label: 'Home',
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  description: `Portfolio website showcasing my work as an ${person.role}`,
+  headline: (
+    <>Building intelligent solutions with AI & Full-Stack Development</>
+  ),
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: (
+      <>
+        Featured project:{' '}
+        <strong className='ml-4'>EduMind - Smart Education System</strong>
+      </>
+    ),
+    href: '/work/edumind-smart-education-system',
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Tuan Anh, an AI Developer and Full-Stack Engineer studying Applied
+      Artificial Intelligence at
+      <br /> HCMUT. I create intelligent applications that solve real-world
+      problems.
     </>
   ),
 };
 
 const about = {
-  path: "/about",
-  label: "About",
+  path: '/about',
+  label: 'About',
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, ${person.role} from Thu Duc City, Vietnam`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -83,59 +86,92 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: 'https://cal.com', // Update with your scheduling link
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: 'Introduction',
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Tuan Anh is a passionate AI Developer and Full-Stack Engineer studying
+        Applied Artificial Intelligence at Ho Chi Minh City University of
+        Technology (HCMUT). He specializes in developing intelligent
+        applications that combine Large Language Models with modern web
+        technologies to create meaningful solutions for education and business
+        management.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
-    title: "Work Experience",
+    display: true,
+    title: 'Projects & Experience',
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: 'EduMind - Smart Education System',
+        timeframe: 'Oct 2024 - Ongoing',
+        role: 'Full-Stack Developer & AI Integration Lead',
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Developed a smart learning platform for programming that combines
+            Large Language Models (LLMs) to optimize personalized learning paths
+            based on user data.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Implemented robust back-end using FastAPI with seamless LLM
+            integration and built responsive front-end interface using Vue.js
+            and Vuetify.
+          </>,
+          <>
+            Utilized LLMs to generate personalized lessons, exercises, and
+            explanations tailored to user progress and learning goals.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: '/images/projects/edumind/cover-01.jpg',
+            alt: 'EduMind Platform',
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: 'FINWISE - Expense Management App',
+        timeframe: 'Apr 2024 - Jun 2024',
+        role: 'Frontend Developer',
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Designed intuitive UI components for expense management including
+            Onboarding, Authentication, and Transaction Creation using React
+            Native.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Developed architectural diagram utilizing MVP architecture for
+            maintainable and scalable code structure.
+          </>,
+          <>
+            Leveraged Expo Go for cross-platform app deployment, facilitating
+            distribution and testing across multiple platforms.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: 'Grocery Store Management System',
+        timeframe: 'Oct 2023 - Dec 2023',
+        role: 'Frontend Developer & Database Designer',
+        achievements: [
+          <>
+            Designed and implemented structured MySQL database with optimized
+            relationships and queries for efficient data management.
+          </>,
+          <>
+            Created stored procedures for CRUD operations, employee work hours
+            tracking, and comprehensive product statistics.
+          </>,
+          <>
+            Built responsive React-based UI for home, statistics, and staff
+            management pages.
           </>,
         ],
         images: [],
@@ -143,124 +179,136 @@ const about = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: 'Education',
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: 'Ho Chi Minh City University of Technology (HCMUT)',
+        description: (
+          <>
+            Computer Science with specialization in Applied Artificial
+            Intelligence. GPA: 3.1/4. Expected graduation: 2025.
+          </>
+        ),
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: 'English Proficiency',
+        description: (
+          <>
+            TOEIC Score: 715, demonstrating strong English communication skills
+            for international collaboration.
+          </>
+        ),
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: 'Technical Skills',
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: 'Programming Languages',
+        description: (
+          <>
+            Proficient in C++, JavaScript, Python, and web technologies
+            (HTML/CSS) for diverse development needs.
+          </>
+        ),
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: 'Frontend Development',
+        description: (
+          <>
+            Experienced with React.js, React Native, and Vue.js for building
+            responsive web and mobile applications.
+          </>
+        ),
+        images: [],
+      },
+      {
+        title: 'Backend & AI',
+        description: (
+          <>
+            Skilled in FastAPI and PHP for backend development, with expertise
+            in integrating Large Language Models and AI solutions.
+          </>
+        ),
+        images: [],
+      },
+      {
+        title: 'Database Management',
+        description: (
+          <>
+            Experienced with MySQL and PostgreSQL for designing efficient
+            database schemas and optimizing query performance.
+          </>
+        ),
+        images: [],
       },
     ],
   },
 };
 
 const blog = {
-  path: "/blog",
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  path: '/blog',
+  label: 'Blog',
+  title: 'AI Development & Engineering Insights...',
+  description: `Read about ${person.name}'s journey in AI development and full-stack engineering`,
 };
 
 const work = {
-  path: "/work",
-  label: "Work",
+  path: '/work',
+  label: 'Projects',
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  description: `AI and Full-Stack development projects by ${person.name}`,
 };
 
 const gallery = {
-  path: "/gallery",
-  label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
+  path: '/gallery',
+  label: 'Gallery',
+  title: `Gallery – ${person.name}`,
+  description: `Project screenshots and development journey by ${person.name}`,
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
+      src: '/images/gallery/horizontal-1.jpg',
+      alt: 'EduMind Dashboard',
+      orientation: 'horizontal',
     },
     {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
+      src: '/images/gallery/horizontal-2.jpg',
+      alt: 'FINWISE Mobile App',
+      orientation: 'horizontal',
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
+      src: '/images/gallery/horizontal-3.jpg',
+      alt: 'Grocery Store Management',
+      orientation: 'horizontal',
     },
     {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
+      src: '/images/gallery/horizontal-4.jpg',
+      alt: 'AI Model Integration',
+      orientation: 'horizontal',
     },
     {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
+      src: '/images/gallery/vertical-1.jpg',
+      alt: 'Code Architecture',
+      orientation: 'vertical',
     },
     {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
+      src: '/images/gallery/vertical-2.jpg',
+      alt: 'Database Design',
+      orientation: 'vertical',
     },
     {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
+      src: '/images/gallery/vertical-3.jpg',
+      alt: 'AI Development Process',
+      orientation: 'vertical',
     },
     {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
+      src: '/images/gallery/vertical-4.jpg',
+      alt: 'Full-Stack Development',
+      orientation: 'vertical',
     },
   ],
 };
